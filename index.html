@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purandhara Everest Academy</title>
+    <meta name="description"
+        content="Purandhara Everest Academy provides world-class education in Kathmandu, Nepal with a focus on academic excellence and holistic development.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <img src="logo.webp" alt="Purandhara Everest Academy Logo" class="logo">
+                    <div class="school-name">
+                        <h1>Purandhara <span>Everest Academy</span></h1>
+                        <p>Excellence in Education Since 2007</p>
+                    </div>
+                </div>
+                <div class="nav-links-container">
+
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About Us</a></li>
+                        <li><a href="#academics" class="nav-link">Academics</a></li>
+                        <li><a href="#facilities" class="nav-link">Facilities</a></li>
+                        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#admissions" class="cta-button">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="hamburger">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Shaping Future Leaders Through Excellence</h1>
+                <p>A premier educational institution in Western, Dang nurturing young minds since 2007</p>
+                <div class="hero-buttons">
+                    <a href="#admissions" class="primary-button">Admission Inquiry</a>
+                    <a href="#tour" class="secondary-button">Schedule a Tour</a>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">About Our Academy</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">18 years of educational excellence in Dang, District</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Our Heritage</h3>
+                        <p>Founded in 2007, Purandhara Everest Academy has established itself as a beacon of quality
+                            education in Western, Dang. We combine modern teaching methodologies with traditional values
+                            to
+                            create well-rounded individuals prepared for global challenges.</p>
+
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-medal"></i>
+                                <h4>Academic Distinction</h4>
+                                <p>Consistent 100% pass rate with 92% distinction in SEE examinations, with our students
+                                    regularly securing top rankings.</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-child-reaching"></i>
+                                <h4>Holistic Development</h4>
+                                <p>20+ extracurricular clubs and annual participation in national/international
+                                    competitions across academics, sports, and arts.</p>
+                            </div>
+                        </div>
+
+                        <div class="mission-vision">
+                            <div class="mission">
+                                <h4><i class="fas fa-bullseye"></i> Our Mission</h4>
+                                <p>To ignite intellectual curiosity, foster creativity, and develop ethical leaders
+                                    through innovative education in a nurturing environment.</p>
+                            </div>
+                            <div class="vision">
+                                <h4><i class="fas fa-eye"></i> Our Vision</h4>
+                                <p>To be Nepal's premier educational institution that transforms students into globally
+                                    competent, socially responsible citizens.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="students.jpg" alt="Students learning in classroom" loading="lazy">
+                        <div class="stats-overlay">
+                            <div class="stat-item">
+                                <span class="stat-number">18</span>
+                                <span class="stat-label">Years of Excellence</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2500+</span>
+                                <span class="stat-label">Successful Alumni</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Parent Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section -->
+        <section id="academics" class="section bg-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Academic Programs</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Comprehensive curriculum designed for 21st century learners</p>
+                </div>
+
+                <div class="academics-grid">
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h3>Early Childhood (Nursery-KG)</h3>
+                        <p>Play-based learning with Montessori approach focusing on cognitive, social, and motor skills
+                            development.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Age-appropriate learning centers</li>
+                            <li><i class="fas fa-check"></i> Sensory and motor skill activities</li>
+                            <li><i class="fas fa-check"></i> 1:8 teacher-student ratio</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                        <h3>Primary (Grades 1-5)</h3>
+                        <p>Integrated curriculum with project-based learning, building strong foundations in core
+                            subjects.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Thematic unit studies</li>
+                            <li><i class="fas fa-check"></i> Reading and math mastery</li>
+                            <li><i class="fas fa-check"></i> Introduction to STEM</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3>Secondary (Grades 6-10)</h3>
+                        <p>Rigorous academic program preparing students for SEE with specialized subject tracks.</p>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Advanced mathematics</li>
+                            <li><i class="fas fa-check"></i> Science research projects</li>
+                            <li><i class="fas fa-check"></i> Career exploration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="academic-features">
+                    <div class="feature-item">
+                        <i class="fas fa-globe"></i>
+                        <h4>Global Curriculum</h4>
+                        <p>Blend of national curriculum with international best practices</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h4>Expert Faculty</h4>
+                        <p>Highly qualified teachers with average 15+ years experience</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Technology Integration</h4>
+                        <p>Smart classrooms with teaching through projectors program for grades 6-10</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>Critical Thinking</h4>
+                        <p>Emphasis on problem-solving and analytical skills</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section id="facilities" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">World-Class Facilities</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">State-of-the-art infrastructure supporting academic excellence</p>
+                </div>
+
+                <div class="facilities-slider">
+                    <div class="facility-slide active">
+                        <img src="modern-library" alt="Modern Library" loading="lazy">
+                        <div class="slide-content">
+                            <h3>Digital Library & Resource Center</h3>
+                            <p>Our 10,000+ volume library features quiet study spaces, digital catalog system, and
+                                specialized collections supporting all academic disciplines.</p>
+                            <a href="#gallery" class="read-more">View Library Photos <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="facility-slide">
+                        <img src="science lab" alt="Science Laboratory" loading="lazy">
+                        <div class="slide-content">
+                            <h3>Advanced Science Laboratories</h3>
+                            <p>Fully equipped physics, chemistry, and biology labs with modern equipment for hands-on
+                                experimentation and research projects.</p>
+                            <a href="#gallery" class="read-more">View Lab Photos <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="facility-slide">
+                        <img src="sportsground-1.jpg" alt="Sports Facilities" loading="lazy">
+                        <div class="slide-content">
+                            <h3>Athletic Complex</h3>
+                            <p>Basketball courts, Football field, Cricket field and indoor Badminton
+                                courts with professional coaching staff.</p>
+                            <a href="#gallery" class="read-more">View Sports Facilities <i
+                                    class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="facilities-grid">
+                    <div class="facility-card">
+                        <div class="card-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Technology Center</h3>
+                        <p>Computer labs with latest hardware, robotics lab, and 3D printing facilities</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="card-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Performing Arts</h3>
+                        <p>Music rooms, dance studio, and auditorium with professional sound system</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="card-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Art & Creativity</h3>
+                        <p>Dedicated art studios with ceramics kiln and digital design workstations</p>
+                    </div>
+
+                    <div class="facility-card">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Dining & Nutrition</h3>
+                        <p>Hygeinic cafeteria serving balanced meals prepared by nutritionists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section bg-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">School Life Gallery</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Experience the vibrant community at Purandhara Everest Academy</p>
+                </div>
+
+                <div class="gallery-filter">
+                    <button class="filter-btn active" data-filter="all">Our Gallery</button>
+                    <!-- <button class="filter-btn" data-filter="academics">Academics</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="facilities">Facilities</button> -->
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="academics">
+                        <img src="students.jpg" alt="Students in classroom" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Interactive Learning</h3>
+                            <p>Students engaged in group project work</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="sports">
+                        <img src="basketball.jpg" alt="Basketball team" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Champion Basketball</h3>
+                            <p>Our national award-winning team</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="annual day.webp" alt="Annual day performance" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Annual Day</h3>
+                            <p>Cultural performance by students</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="facilities">
+                        <img src="science lab" alt="Science lab" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Lab Experiments</h3>
+                            <p>Students conducting chemistry experiments</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="academics">
+                        <img src="modern-library" alt="Library reading" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Library Time</h3>
+                            <p>Students enjoying reading hour</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="science fair.webp" alt="Science fair" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Science Exhibition</h3>
+                            <p>Annual student project showcase</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all">
+                    <a href="#" class="primary-button">View Full Gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admissions Section -->
+        <section id="admissions" class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Admissions Process</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Join our community of learners and achievers</p>
+                </div>
+
+                <div class="admissions-process">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h3>Inquiry</h3>
+                        <p>Submit online inquiry form or visit our School</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h3>Tour</h3>
+                        <p>Schedule a personalized School tour</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h3>Assessment</h3>
+                        <p>Grade-appropriate evaluation</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h3>Enrollment</h3>
+                        <p>Complete registration and documentation</p>
+                    </div>
+                </div>
+
+                <div class="admissions-content">
+                    <div class="admissions-info">
+                        <h3>2025-26 Academic Year Admissions</h3>
+                        <p>We are currently accepting applications for all grades from Nursery to Class 9. Limited seats
+                            available for mid-year transfers.</p>
+
+                        <div class="info-box">
+                            <h4><i class="fas fa-calendar-alt"></i> Important Dates</h4>
+                            <ul>
+                                <li><strong>Application Deadline:</strong> August 15, 2025</li>
+                                <li><strong>Interviews:</strong> August 17-20, 2024</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box">
+                            <h4><i class="fas fa-file-alt"></i> Required Documents</h4>
+                            <ul>
+                                <li>Completed application form</li>
+                                <li>Birth certificate (for new admissions)</li>
+                                <li>Previous year's report card</li>
+                                <li>Transfer certificate (for grade 2 and above)</li>
+                                <li>2 passport-sized photographs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="admissions-form">
+                        <h3>Admission Inquiry Form</h3>
+                        <form id="admissionForm">
+                            <div class="form-group">
+                                <input type="text" id="parentName" placeholder="Parent/Guardian Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <select id="grade" required>
+                                    <option value="">Grade Interested In</option>
+                                    <option value="nursery">Nursery</option>
+                                    <option value="lkg">LKG</option>
+                                    <option value="ukg">UKG</option>
+                                    <option value="1">Grade 1</option>
+                                    <option value="2">Grade 2</option>
+                                    <option value="3">Grade 3</option>
+                                    <option value="4">Grade 4</option>
+                                    <option value="5">Grade 5</option>
+                                    <option value="6">Grade 6</option>
+                                    <option value="7">Grade 7</option>
+                                    <option value="8">Grade 8</option>
+                                    <option value="9">Grade 9</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Additional Information or Questions"
+                                    rows="4"></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-button">Submit Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Tour Section -->
+        <section id="tour" class="section bg-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Virtual School Tour</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Explore our facilities from anywhere in the world</p>
+                </div>
+
+                <div class="tour-container">
+                    <div class="tour-video">
+                        <iframe src="https://youtube.com/embed/example" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <div class="tour-highlights">
+                        <h3>School Highlights</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Spacious, well-ventilated classrooms</li>
+                            <li><i class="fas fa-check-circle"></i> Secure playgrounds with age-appropriate equipment
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Hygienic washrooms with separate facilities</li>
+                            <li><i class="fas fa-check-circle"></i> CCTV-monitored premises</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency help at any situation</li>
+                        </ul>
+
+                        <div class="tour-cta">
+                            <h4>Ready to see it in person?</h4>
+                            <a href="#contact" class="primary-button">Schedule a School Visit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">What Parents & Students Say</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">Hear from our school community about their experiences</p>
+                </div>
+
+                <div class="testimonials-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>Purandhara Everest Academy has provided my child with an exceptional learning environment
+                                that balances academic rigor with creative expression. The teachers genuinely care about
+                                each student's growth.</p>
+                            <div class="testimonial-author">
+                                <img src="parent.avif" alt="Parent testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <h4>Mrs. Sunita Shrestha</h4>
+                                    <p>Parent of Grade 5 Student</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>The science program at Purandhara prepared me exceptionally well for my higher studies.
+                                The research opportunities and lab facilities rival those at many colleges.</p>
+                            <div class="testimonial-author">
+                                <img src="parent.avif" alt="Alumni testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <h4>Rohan Karki</h4>
+                                    <p>Class of 2020, now at TU Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <p>As an international parent, I appreciate how the school celebrates cultural diversity
+                                while maintaining strong Nepali values. My children have thrived academically and
+                                socially.</p>
+                            <div class="testimonial-author">
+                                <img src="parent.avif" alt="Parent testimonial" loading="lazy">
+                                <div class="author-info">
+                                    <h4>Dr. Anil Patel</h4>
+                                    <p>Parent of Grade 3 & 7 Students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider-controls">
+                        <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots"></div>
+                        <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-light">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Our Academy</h2>
+                    <div class="divider"></div>
+                    <p class="section-subtitle">We're here to answer your questions</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Our Location</h3>
+                            <address>
+                                Purandhara Everest Academy<br>
+                                Babai R.M - 3 Hansapur,<br>
+                                Dang 22400, Nepal
+                            </address>
+                            <div class="location-details">
+                                <p><strong>Landmark:</strong> Opposite Gaurisankhar Temple, near Hapure, Dang</p>
+                                <p><strong>Schoool Open Hours:</strong> Sunday-Friday, 8:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h3>Phone Contacts</h3>
+                            <p><strong>Administration:</strong> +977-1-1234567</p>
+                            <p><strong>Admissions:</strong> +977-1-1234568</p>
+                            <p><strong>Principal's Office:</strong> +977-9801234567</p>
+                            <p><strong>Emergency:</strong> +977-9807654321</p>
+                        </div>
+
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Addresses</h3>
+                            <p><strong>General Inquiries:</strong> info@purandhara.edu.np</p>
+                            <p><strong>Admissions:</strong> admissions@purandhara.edu.np</p>
+                            <p><strong>Principal:</strong> principal@purandhara.edu.np</p>
+                        </div>
+
+                        <div class="info-card map-card">
+                            <iframe src="Screenshot 2025-04-14 105857.png"
+                                style="width: 100%; height: 300px; border: none; border-radius: 8px;"
+                                loading="lazy"></iframe>
+                            <a href="https://maps.app.goo.gl/Qifs7vnoXLFCwY4e6" class="map-link" target="_blank">
+                                <i class="fas fa-directions"></i> Get Directions on Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Your Name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Your Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Phone Number">
+                            </div>
+
+                            <div class="form-group">
+                                <select id="department" required>
+                                    <option value="">Select Department</option>
+                                    <option value="admissions">Admissions</option>
+                                    <option value="academics">Academic Inquiry</option>
+                                    <option value="administration">Administration</option>
+                                    <option value="feedback">Feedback/Suggestions</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="primary-button">Send Message</button>
+                        </form>
+                        <div class="contact-image-container">
+                            <img src="front.jpg" alt="School Front View" loading="lazy">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <div class="footer-logo-container">
+                    <img src="logo.webp" alt="Purandhara Everest Academy Logo" class="footer-logo"
+                        style="border-radius: 99px;">
+                    <div class="footer-school-name">
+                        <h3>Purandhara Everest Academy</h3>
+                        <p>Excellence in Education Since 2007</p>
+                    </div>
+                </div>
+                <p>Providing quality education that empowers students to achieve their fullest potential and become
+                    responsible global citizens.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/purandharaeverest" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/purandharaeverest" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com/company/purandhara-everest-academy" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#facilities">Facilities</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#admissions">Admissions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="#">Curriculum</a></li>
+                    <li><a href="#">Assessment Policy</a></li>
+                    <li><a href="#">Academic Calendar</a></li>
+                    <li><a href="#">Co-curricular</a></li>
+                    <li><a href="#">Student Support</a></li>
+                    <li><a href="#">School Uniform</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <address>
+                    <i class="fas fa-map-marker-alt"></i> Babai R.M - 3 Hansapur, Dang
+                </address>
+                <p><i class="fas fa-phone-alt"></i> +977-1-1234567</p>
+                <p><i class="fas fa-envelope"></i> info@purandhara.edu.np</p>
+
+                <div class="footer-hours">
+                    <h4>Office Hours</h4>
+                    <p>Sunday-Friday: 10AM - 4PM</p>
+                    <p>Admissions: 8AM - 5PM</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Purandhara Everest Academy. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="https://maps.app.goo.gl/Qifs7vnoXLFCwY4e6">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
